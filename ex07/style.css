@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --cor-de-fundo: rgb(243, 184, 132);
+    --cor-de-fundo-2: rgb(27, 57, 70);
+    --cor-de-fundo-3: rgb(0, 0, 0);
+    --cor-de-fundo-4: rgb(2, 39, 32);
+    --cor-de-texto: rgb(255, 255, 255);
+    --cor-de-texto-2: rgb(0, 0, 0);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modoClaro {
+    background-image: radial-gradient(circle, var(--cor-de-fundo-2), var(--cor-de-fundo));
+    color: var(--cor-de-texto-2);
+}
+.modoEscuro {
+    background-image: radial-gradient(circle, var(--cor-de-fundo-3), var(--cor-de-fundo-4));
+    color: var(--cor-de-texto);
+}
+input {
+    margin: 100% auto;
+}
