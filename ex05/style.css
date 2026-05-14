@@ -61,3 +61,28 @@ button {
     border: 3px solid var(--cor-de-texto);
     padding: 5px;
 }
+div#autor {
+    font-size: 16px;
+    text-decoration: none;
+    margin: auto;
+    width: 13vw;
+    font-style: italic;
+    color: var(--cor-de-texto-2);
+    background-color: rgba(255, 255, 255, 0.179);
+    border-radius: 5px;
+    border: 1px solid var(--cor-de-texto);
+    text-align: center;
+    margin-top: 20px;
+}
+div#autor a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--cor-de-texto-2);
+}
+div#autor a:hover {
+    color: var(--cor-de-texto);
+}
+div#autor p {
+    font-size: 16px;
+    margin: 5px;
+}
