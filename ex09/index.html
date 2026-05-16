@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Texto</title>
+    <title>Clicador</title>
 </head>
 <body>
     <header>
-            <h1>Exercício 08 (Simples)</h1>
-            <p>Digite algo na caixa de textop e isto será exibido em uma outra caixa de texto</p>
+        <h1>Clicador</h1>
+        <p>Clique no botão abaixo para adicionar mais mensagems de "Clicou!"</p>
     </header>
     <section>
-            <input type="text" name="texto" id="texto" placeholder="Digite Aqui"> <button onclick="mensagem()">Ok</button>
+        <button id="clickButton" onclick="addMessage()">Clique aqui</button>
+        <div id="messageContainer">
+            <p>Clique</p>
+        </div>
     </section>
     <footer>
         <p><a href="https://github.com/DevThiagoCBM">&copy; DevThiagoCBM</a></p>
     </footer>
-    <script src="ex08.js"></script>
+    <script src="ex09.js"></script>
 </body>
 </html>
