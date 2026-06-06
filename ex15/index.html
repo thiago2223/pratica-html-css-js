@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora Simples</h1>
+        <p>Adição | Subtração | Multiplicação | Divisão</p>
+    </header>
+    <section>
+        <input type="number" name="num1" id="num1">
+        <input type="number" name="num2" id="num2">
+    </section>
+    <section id="radio">
+        <input type="radio" name="oper" id="adic"> Adição
+        <input type="radio" name="oper" id="subtr"> Subtração
+        <input type="radio" name="oper" id="multp"> Multiplicação
+        <input type="radio" name="oper" id="divs"> Divisão
+        <button onclick="operacao()">Fazer operação</button>
+    </section>
+    <section id="resultado">
+        <p id="res"></p>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="ex15.js"></script>
+</body>
+</html>

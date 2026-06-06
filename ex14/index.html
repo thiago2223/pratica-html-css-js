@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nota - Média</title>
+</head>
+<body>
+    <header>
+        <h1>Nota - Média</h1>
+        <p>Digite a nota mensal e a nota bimestral</p>
+    </header>
+    <section>
+        <input type="number" id="notaMensal" placeholder="Nota Mensal">
+        <input type="number" id="notaBimestral" placeholder="Nota Bimestral">
+        <button onclick="calcularMedia()">Calcular Média</button>
+    </section>
+    <section id="resultado">
+        <p id="media-res"></p>
+        <button onclick="limparCampos()">Ok</button>
+    </section>
+    <script src="ex14.js"></script>
+</body>
+</html>
