@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <h1>Adição | Subtração | Multiplicação | Divisão</h1>
+        <p>Digite dois números e aperte o botão para calcular.</p>
+    </header>
+    <section id="corpo">
+        <div id="operacoes">
+            <div id="num-e-button">
+                <input type="number" name="num1" id="num1">
+                <input type="number" name="num2" id="num2">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+            <label><input type="radio" name="oper" id="adic"> Adição</label>
+            <label><input type="radio" name="oper" id="subtr"> Subtração</label>
+            <label><input type="radio" name="oper" id="multp"> Multiplicação</label>
+            <label><input type="radio" name="oper" id="divs"> Divisão</label>
+        </div>
+        <p id="res"><button onclick="ok()" id="ok">Ok</button></p>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="ex20-extra.js"></script>
+</body>
+</html>
