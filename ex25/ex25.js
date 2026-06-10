@@ -2,5 +2,8 @@
 var notas = [8, 8 , 9 , 7.5, 10]
 let soma = 0
 for (let indice_soma = 0; indice_soma < notas.length; indice_soma++) {
-     += notas[indice_soma]
+     soma += notas[indice_soma]
+     console.log(soma)
 }
+media = soma / 5
+console.log(media)
