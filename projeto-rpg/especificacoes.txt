@@ -1,0 +1,2 @@
+Como integrar com a Lógica:
+Se for usar esta interface, o seu JavaScript mudará um pouquinho. Em vez de prompt() num laço while, você vai criar funções que são ativadas quando o utilizador clica nos botões (usando addEventListener ou o atributo onclick no HTML), e no lugar do alert(), você vai usar document.querySelector("#game-text").innerHTML para atualizar a mensagem na tela!

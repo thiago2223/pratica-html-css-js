@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG: Caçador de Bugs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <header class="stats-board">
+            <div class="hero-box">
+                <h3>🦸‍♂️ Herói</h3>
+                <p>Vida: <span id="hero-hp" class="hp-text">100</span></p>
+            </div>
+            <div class="monster-box">
+                <h3>👾 Monstro</h3>
+                <p>Vida: <span id="monster-hp" class="hp-text">50</span></p>
+            </div>
+        </header>
+
+        <section class="backpack-board">
+            <h4>🎒 Sua Mochila (Clique no item para usar):</h4>
+            <ul id="lista-mochila">
+                </ul>
+        </section>
+
+        <main class="log-screen">
+            <p id="game-text">Você está prestes a entrar na arena! Primeiro, compre seus itens de sobrevivência...</p>
+        </main>
+
+        <footer class="action-menu">
+            <button id="btn-attack" class="btn" onclick="atacar()">⚔️ Atacar</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
