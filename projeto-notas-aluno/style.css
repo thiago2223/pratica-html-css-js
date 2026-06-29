@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaço entre o bloco mensal e o bimestral */
+}
+
+/* Bloco que envolve cada período */
+.card-notas {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card-notas h2 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 12px;
+}
+
+/* Detalhe visual colorido antes do título de cada bloco */
+.card-notas h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15%;
+    height: 70%;
+    width: 4px;
+    border-radius: 2px;
+}
+
+.card-notas:nth-of-type(1) h2::before { background-color: #3498db; } /* Azul para Mensal */
+.card-notas:nth-of-type(2) h2::before { background-color: #9b59b6; } /* Roxo para Bimestral */
+
+/* Container responsivo para scroll no celular */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px; /* Evita que as colunas fiquem muito apertadas */
+}
+
+th, td {
+    padding: 12px 8px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+/* Cabeçalho das Matérias */
+.materia {
+    background-color: #f8f9fa;
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Inputs bonitos para digitar as notas */
+input[type="number"] {
+    width: 65px;
+    padding: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    font-weight: 500;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+/* Remove as setinhas padrão do input do navegador */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Área de Soma e Média (Rodapé da tabela) */
+.linha-resultado td {
+    background-color: #f1f5f9;
+    padding: 15px;
+    font-size: 1rem;
+    color: #334155;
+}
+
+.linha-resultado strong {
+    color: #1e293b;
+}
+
+/* Cores de destaque nos valores finais */
+#soma-mensal, #media-mensal { color: #2980b9; font-weight: 600; }
+#soma-bimestral, #media-bimestral { color: #8e44ad; font-weight: 600; }
+/* Mantenha todo o seu código CSS anterior e adicione/atualize essas regras abaixo */
+
+/* Indicador colorido lateral verde para a seção de médias */
+.card-notas.card-medias h2::before {
+    background-color: #2ecc71; /* Verde */
+}
+
+/* Estilo para as caixinhas de exibição das médias finais */
+.linha-medias-finais td {
+    background-color: #ffffff;
+    font-weight: 700;
+    color: #27ae60;
+    font-size: 1.1rem;
+    padding: 15px 10px;
+}
+
+/* Deixa o hover das médias combinando com o verde */
+.linha-medias-finais:hover td {
+    background-color: rgba(46, 204, 113, 0.05);
+}

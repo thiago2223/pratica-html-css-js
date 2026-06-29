@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notas Escolares</title>
+</head>
+<body>
+    <header>
+        <h1>Controle de Notas</h1>
+        <p>Acompanhamento de Desempenho</p>
+    </header>
+
+    <main>
+        <section class="card-notas">
+            <h2>Avaliações Mensais</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="materia">Português</th>
+                            <th class="materia">Matemática</th>
+                            <th class="materia">Ciências</th>
+                            <th class="materia">História</th>
+                            <th class="materia">Geografia</th>
+                            <th class="materia">Filosofia</th>
+                            <th class="materia">Artes</th>
+                            <th class="materia">Inglês</th>
+                            <th class="materia">Química</th>
+                            <th class="materia">Biologia</th>
+                            <th class="materia">Física</th>
+                            <th class="materia">Sociologia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" step="0.1" id="portugues-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="matematica-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="ciencias-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="historia-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="geografia-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="filosofia-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="artes-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="ingles-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="quimica-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="biologia-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="fisica-mensal-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="sociologia-mensal-nota" min="0" max="10"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="linha-resultado">
+                            <td colspan="6"><strong>Soma Total:</strong> <span id="soma-mensal">-</span></td>
+                            <td colspan="6"><strong>Média Geral:</strong> <span id="media-mensal">-</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section class="card-notas">
+            <h2>Avaliações Bimestrais</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="materia">Português</th>
+                            <th class="materia">Matemática</th>
+                            <th class="materia">Ciências</th>
+                            <th class="materia">História</th>
+                            <th class="materia">Geografia</th>
+                            <th class="materia">Filosofia</th>
+                            <th class="materia">Artes</th>
+                            <th class="materia">Inglês</th>
+                            <th class="materia">Química</th>
+                            <th class="materia">Biologia</th>
+                            <th class="materia">Física</th>
+                            <th class="materia">Sociologia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" step="0.1" id="portugues-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="matematica-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="ciencias-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="historia-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="geografia-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="filosofia-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="artes-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="ingles-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="quimica-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="biologia-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="fisica-bimestral-nota" min="0" max="10"></td>
+                            <td><input type="number" step="0.1" id="sociologia-bimestral-nota" min="0" max="10"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="linha-resultado">
+                            <td colspan="6"><strong>Soma Total:</strong> <span id="soma-bimestral">-</span></td>
+                            <td colspan="6"><strong>Média Geral:</strong> <span id="media-bimestral">-</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section class="card-notas card-medias">
+            <h2>Média por Matéria</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="materia">Português</th>
+                            <th class="materia">Matemática</th>
+                            <th class="materia">Ciências</th>
+                            <th class="materia">História</th>
+                            <th class="materia">Geografia</th>
+                            <th class="materia">Filosofia</th>
+                            <th class="materia">Artes</th>
+                            <th class="materia">Inglês</th>
+                            <th class="materia">Química</th>
+                            <th class="materia">Biologia</th>
+                            <th class="materia">Física</th>
+                            <th class="materia">Sociologia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="linha-medias-finais">
+                            <td><span id="portugues-media">-</span></td>
+                            <td><span id="matematica-media">-</span></td>
+                            <td><span id="ciencias-media">-</span></td>
+                            <td><span id="historia-media">-</span></td>
+                            <td><span id="geografia-media">-</span></td>
+                            <td><span id="filosofia-media">-</span></td>
+                            <td><span id="artes-media">-</span></td>
+                            <td><span id="ingles-media">-</span></td>
+                            <td><span id="quimica-media">-</span></td>
+                            <td><span id="biologia-media">-</span></td>
+                            <td><span id="fisica-media">-</span></td>
+                            <td><span id="sociologia-media">-</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
